@@ -1,6 +1,8 @@
 # python_curve_plotter
 
-This Python project shows how to use the library PyQtgraph and the framework PyQt to plot curves.
+### This Python project shows how to use the library PyQtgraph and the framework PyQt to plot curves.
+
+![snapshot](https://user-images.githubusercontent.com/5813359/154171025-a3e7efe4-5717-403f-8423-79485ed22313.png)
 
 PyQtGraph is a graphics and user interface library for Python that provides functionality commonly required in engineering and science applications. Its primary goals are 
 1) provide fast, interactive graphics for displaying data (plots, video, etc.). 
