@@ -23,7 +23,7 @@ class Plotter(QMainWindow):
         self.x_axis_units = ''
         self.y_axis_label = 'Amplitude'
         self.y_axis_units = ''
-        self.curve_title = 'Sine Wave'
+        self.curve_title = 'Sine Wave Curve'
         self.axis_x_value = 0
         self.axis_y_value = 0
         self.axis_x_list = list()
@@ -70,7 +70,7 @@ class Plotter(QMainWindow):
         self._plotWidget.addItem(self._plotCurveItem)
 
         # Create an instance of a QPushButton and set it up.
-        self.button = QPushButton("Pause")
+        self.button = QPushButton("Plot")
         self.button.setFixedSize(QSize(65, 25))
         self.button.clicked.connect(self.Pause)
 
@@ -105,7 +105,7 @@ class Plotter(QMainWindow):
         # To test the method UpdateCurveValues.
         self.timer = QTimer()
         self.timer.timeout.connect(self.PlotSineWaveCurveShowingRangeValues)
-        self.timer.start(1)
+#        self.timer.start(1)
 
     @QtCore.pyqtSlot()
     def PlotCurveWithRandomValues(self) -> None:
